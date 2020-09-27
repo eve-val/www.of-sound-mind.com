@@ -19,6 +19,14 @@
       type of module.
     </p>
     <p>
+      <a name="armor-timer" href="#armor-timer">Armor Timer</a>:
+      A <a href="#timer">timer</a> during which a citadel's armor may be
+      damaged. Lasts for 15 minutes, but may be extended by applying enough
+      damage to "pause" the timer. Ends when either the 15 minutes elapses and
+      the citadel repairs fully, or the citadel is damaged to 0% armor and a
+      <a href="#hull-timer">hull timer</a> is generated.
+    </p>
+    <p>
       <a name="brawling" href="#brawling">Brawling</a>:
       Close-range combat, usually within <a href="#scram">scram</a> range.
       Dominated by heavily-tanked, short-range, high-damage ships. See also
@@ -146,6 +154,14 @@
       always very tanky. Hictors fit a module that can create a bubble at will,
       as well as acting as a special warp disruptor or scrambler with infinite
       <a href="#point">points</a>.
+    </p>
+    <p>
+      <a name="hull-timer" href="#hull-timer">Hull Timer</a>:
+      A <a href="#timer">timer</a> during which a citadel's hull may be
+      damaged. Lasts for 30 minutes, but may be extended by applying enough
+      damage to "pause" the timer. Ends when either the 30 minutes elapses and
+      the citadel repairs fully, or the citadel is damaged to 0% hull and is
+      destroyed.
     </p>
     <p>
       <a name="instalock" href="#instawarp">Instalock</a>:
@@ -376,6 +392,21 @@
       given as a percentage between 10% and 100%.
     </p>
     <p>
+      <a name="timer" href="#timer">Timer</a>:
+      Damaged citadels, POSes, POCOs, and sovereignty structures enter a <a href="reinforce">
+        reinforced mode</a> during which they are invulnerable. A visible 
+        timer counts down to the end of reinforcement. When the structure comes
+        out of reinforcement, this starts a "timer" during which the structure
+        can be damaged further. If ignored, a damaged structure will eventually
+        repair itself.
+    </p>
+    <p>
+        <a name="toast" href="#toast">Toast</a>:
+        See <a href="#wand">wand</a>. The action of activating an Entosis Link
+        module to contest system sovereignty. A ship equipped with this module
+        may also be called a "Toaster".
+    </p>
+    <p>
       <a name="triage" href="#triage">Triage</a>:
       A mode that force auxiliaries can enter, during which they receive huge
       tank and remote repair bonuses and immunity to most ewar but cannot move
@@ -445,6 +476,7 @@
       <li><b>RAH</b>: Reactive Armor Hardener</li>
       <li><b>RF</b>: Republic Fleet, a <a href="#faction">faction</a></li>
       <li><b>RF</b>: <a href="#reinforce">Reinforce</a></li>
+      <li><b>TCU</b>: Territorial Control Unit, a nullsec sovereignty structure</li>
       <li><b>TS</b>: True Sansha, a <a href="#faction">faction</a></li>
     </ul>
   </body>
