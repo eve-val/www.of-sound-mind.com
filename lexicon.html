@@ -19,6 +19,14 @@
       type of module.
     </p>
     <p>
+      <a name="armor-timer" href="#armor-timer">Armor Timer</a>:
+      A <a href="#timer">timer</a> during which a citadel's armor may be
+      damaged. Lasts for 15 minutes, but may be extended by applying enough
+      damage to "pause" the timer. Ends when either the 15 minutes elapses and
+      the citadel repairs fully, or the citadel is damaged to 0% armor and a
+      <a href="#hull-timer">hull timer</a> is generated.
+    </p>
+    <p>
       <a name="brawling" href="#brawling">Brawling</a>:
       Close-range combat, usually within <a href="#scram">scram</a> range.
       Dominated by heavily-tanked, short-range, high-damage ships. See also
@@ -97,6 +105,12 @@
       temporary <a href="#bubble">bubbles</a>. Usually fast and fragile.
     </p>
     <p>
+      <a name="drag-bubble" href="#drag-bubble">Drag Bubble</a>:
+      A <a href="#bubble">bubble</a> placed beyond the expected landing spot so 
+      unwary victims are dragged into it. The arrangement is Warp Start --> 
+      Intended Landing --> Actual Landing/Drag Bubble.
+    </p>
+    <p>
       <a name="drop" href="#drop">Drop</a>:
       Sometimes also "hotdrop". To suddenly move a fleet on top of an enemy via
       a <a href="#cyno">cyno</a>, either with a <a href="#bridge">bridge</a>
@@ -111,7 +125,7 @@
     <p>
       <a name="eanm" href="#eanm">EANM</a>:
       Short for "Energized Adaptive Nano Membrane", the old name for the
-      Multispectrum Energized Membrane.
+      Multispectrum Energized Membrane. Sometimes pronounced "e-nam".
     </p>
     <p>
       <a name="faction" href="#faction">Faction</a>:
@@ -131,11 +145,23 @@
       show up on <a href="#d-scan">d-scan</a> but not on overview.
     </p>
     <p>
+      <a name="hic" href="#hic">HIC</a>:
+      See <a href="#hictor>Hictor</a>.
+    </p>
+    <p>
       <a name="hictor" href="#hictor">Hictor</a>:
       A cruiser-sized interdictor, short for "heavy interdictor". Almost
       always very tanky. Hictors fit a module that can create a bubble at will,
       as well as acting as a special warp disruptor or scrambler with infinite
       <a href="#point">points</a>.
+    </p>
+    <p>
+      <a name="hull-timer" href="#hull-timer">Hull Timer</a>:
+      A <a href="#timer">timer</a> during which a citadel's hull may be
+      damaged. Lasts for 30 minutes, but may be extended by applying enough
+      damage to "pause" the timer. Ends when either the 30 minutes elapses and
+      the citadel repairs fully, or the citadel is damaged to 0% hull and is
+      destroyed.
     </p>
     <p>
       <a name="instalock" href="#instawarp">Instalock</a>:
@@ -207,9 +233,14 @@
     </p>
     <p>
       <a name="point" href="#point">Point</a>:
-      To activate a warp disruptor or warp scrambler on another ship. So named
+      <ul>
+        <li>To activate a warp disruptor or warp scrambler on another ship. So named
       because technically these modules apply "points" of warp disruption, which
-      are countered by warp core stabilizers (<a href="#stab">stabs</a>).
+        are countered by warp core stabilizers (<a href="#stab">stabs</a>).</li>
+        <li>To activate specifically a warp disruptor on another ship. During combat,
+        it may be important to indicate whether you applied a <a href="#scram">scram</a>
+        or just a point to the target.</li>
+      </ul>
     </p>
     <p>
       <a name="pvp-timer" href="#pvp-timer">PvP timer</a>:
@@ -324,6 +355,12 @@
       fitted cancels out one <a href="#point">point</a>.
     </p>
     <p>
+      <a name="stop-bubble" href="#stop-bubble">Stop Bubble</a>:
+      A <a href="#bubble">bubble</a> placed in front of the expected landing spot so 
+      unwary victims are stopped by it. The arrangement is Warp Start --> 
+      Actual Landing/Stop Bubble --> Intended Landing.
+    </p>
+    <p>
       <a name="tackle" href="#tackle">Tackle</a>:
       <ol>
         <li>
@@ -353,6 +390,21 @@
       take more real time. This gives the servers time to simulate more action,
       which allows for bigger fights to continue, albeit more slowly. Usually
       given as a percentage between 10% and 100%.
+    </p>
+    <p>
+      <a name="timer" href="#timer">Timer</a>:
+      Damaged citadels, POSes, POCOs, and sovereignty structures enter a <a href="reinforce">
+        reinforced mode</a> during which they are invulnerable. A visible 
+        timer counts down to the end of reinforcement. When the structure comes
+        out of reinforcement, this starts a "timer" during which the structure
+        can be damaged further. If ignored, a damaged structure will eventually
+        repair itself.
+    </p>
+    <p>
+        <a name="toast" href="#toast">Toast</a>:
+        See <a href="#wand">wand</a>. The action of activating an Entosis Link
+        module to contest system sovereignty. A ship equipped with this module
+        may also be called a "Toaster".
     </p>
     <p>
       <a name="triage" href="#triage">Triage</a>:
@@ -424,6 +476,7 @@
       <li><b>RAH</b>: Reactive Armor Hardener</li>
       <li><b>RF</b>: Republic Fleet, a <a href="#faction">faction</a></li>
       <li><b>RF</b>: <a href="#reinforce">Reinforce</a></li>
+      <li><b>TCU</b>: Territorial Control Unit, a nullsec sovereignty structure</li>
       <li><b>TS</b>: True Sansha, a <a href="#faction">faction</a></li>
     </ul>
   </body>
