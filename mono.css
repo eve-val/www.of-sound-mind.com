@@ -2,3 +2,10 @@ body {
   font-family: monospace;
   max-width: 40em;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+  }
+}
